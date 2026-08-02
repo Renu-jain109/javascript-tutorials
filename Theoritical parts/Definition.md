@@ -114,3 +114,212 @@ Reinizilation :-
 var :- it is possible
 let :- it is a possible
 const:-it is not a possible
+
+
+tokens :- 
+What are tokens in javascript ? 
+--> tokens are the smallest meaningful units of a javascript program.They include identifiers (names like variables and functions), keywords(reserved words such as let, if , return) , literals(fixed value like numbers ,strings , booleans , arrays and objects), operators(such as +, -, = ), and separators(such as ; , (), {}).
+
+Example :- 
+
+let age = 25;
+
+
+| Token | Type       |
+| ----- | ---------- |
+| `let` | Keyword    |
+| `age` | Identifier |
+| `=`   | Operator   |
+| `25`  | Literal    |
+| `;`   | Separator  |
+
+
+Keywords :- Keywords are reserved word in javascript that have a predefined meaning. you cant use them as identifiers.
+
+eg:- let, const, var, if, else, for, while, function, return, break, continue, class, new, switch, case, try, catch/
+
+Identifiers :- An identifier is the name you give to variables, functions, classes, objects;
+
+ex:- 
+
+let studentName ;
+
+function name() { 
+  console.log("Hello world.")
+}
+
+identifiers :- a :- cant start with a number :- let 123name = "srishti";
+               point b :- cant use javscript keyword :-  let if = 10;
+               point c :- identifiers are case-sensitive :- let age = 20; and let Age = 30;
+
+Literals :- A literal is a fixed value written directly in your code. 
+Ex :- let age = 20;
+20 is a literal.
+
+<!-- Types of literal:-  -->
+
+type-1 : Number Literal = 10;
+type-2 : String Literal = "20";
+type-3 : Boolean Literal = true , false;
+type-4 : Null Literal = Null;
+type-5 : BigInt Literal = 1234567891112131415n;
+type-6 : Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
+type-7 : Object Literal = let obj = { name : "Aarushi", id: "123"}; 
+
+
+Arthmetic Operators :- Operators are symbols or keywords that perform operation on one or more operands(value or variable).
+
+Types of Operators :-
+1:- Arthmetic Operators:- Used to perform mathematical calculation.
+
+Operator	Description	Example	Output
++	        Addition	  10 + 5	15
+-	      Subtraction	  10 - 5	5
+*	    Multiplication	10 * 5	50
+/	        Division	  10 / 5	2
+%	  Modulus (Remainder)	10 % 3	 1
+**	   Exponentiation	2 ** 3	8
+++	    Increment   	a++	Adds  1
+--	    Decrement	a--	Subtracts   1
+
+
+2:- Assignment Operators:- Used to assign values to variables.
+
+Operator	Example	   Equivalent
+=	        a = 5	   Assign value
++=	      a += 2	   a = a + 2
+-=	      a -= 2	   a = a - 2
+*=	      a *= 2	   a = a * 2
+/=	      a /= 2	   a = a / 2
+%=	      a %= 2	   a = a % 2
+**=	      a **= 2	   a = a ** 2
+
+
+3:- Comparision Operators :- Used to compare two values.
+
+Operator	Meaning	Example	               Output
+==	     Equal (value only)	5 == "5"	true
+===	    Strict Equal	5 === "5"	false
+!=	    Not Equal	5 != 3	                true
+!==	     Strict Not Equal	5 !== "5"	true
+>	     Greater Than	10 > 5	        true
+<	           Less Than	10 < 5	        false
+>=	Greater Than or Equal	10 >= 10	true
+<=	Less Than or Equal	5 <= 10	        true
+
+
+Note :- (== compares only values (allows type conversion).
+=== compares both value and data type (recommended).)
+
+4:- Logical Operators :- Used to combined multiple conditions.
+
+Operator	Meaning
+&&	        AND
+`	
+!	        NOT
+
+Example:
+
+let age = 20;
+let hasLicense = true;
+
+console.log(age >= 18 && hasLicense); // true
+console.log(age < 18 || hasLicense);  // true
+console.log(!hasLicense);             // false
+
+
+5:- Unary Operators :- Operate on a single operand.
+
+Example:
+
+let a = 5;
+a++;
+console.log(a); // 6
+
+a--;
+console.log(a); // 5
+
+Also:
+let x = 10;
+console.log(typeof x); // "number"
+typeof is also a unary operator.
+
+
+6:- Ternary Operators :- A shorter form for if else conditons.
+
+Syntax:
+condition ? valueIfTrue : valueIfFalse;
+
+Example:
+let age = 20;
+let result = age >= 18 ? "Adult" : "Minor";
+console.log(result);
+Output:
+Adult
+
+
+7:- String Operators :- The "+" operator concatinates (joins) string.
+
+Example:
+
+let first = "Md";
+let last = "Noushad";
+
+console.log(first + " " + last);
+
+Output:
+Md Noushad
+
+
+8:- Nullish Operators (??) :- Returns the right hand value(R.H.S) only if the  left hand value is null or undefined.
+
+let name = null;
+console.log(name ?? "Guest");
+Output:
+Guest
+
+
+9:- Optional Chaining (?.) :- Safely accesses nested object properties.
+
+let user = {};
+console.log(user.address?.city);
+Output:
+undefined
+No error is thrown even though address doesn't exist.
+
+
+Data Types :- Defines the types of data is called data type.
+
+Two Data Types are :- 
+
+1:- Primitive Data Type 
+2:- Non-Primitive Data Type
+
+Difference  Primitive Data Type and  Non-Primitive Data Type :-
+
+Primitive Data Type                                 Non-Primitve Data Type
+
+1:- Pre-defined  data type                            User defined data type
+2:- By using primitve data type                       We can store the multiple data in the one variable.
+    we can store the single data                        Ex:- Arrays, Objects, functions
+    type in the single block of 
+    memory.
+Ex:- string, boolean , number,undefined 
+
+
+Number :- All the numeric data are considered as a numbers.
+Ex:- let x = 30;
+     let y = 40;
+console.log(typeOf(x));
+console.log(typeOf(y));
+
+
+String :- The data which are closed (""), (``), ('') are considered as string.
+
+Boolean :- it just include true or false.
+
+Ex:- let value = true;
+     let value1 = false;
+
+Note :- value of true is 1 and the value of false is 0.
+
