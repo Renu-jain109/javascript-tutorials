@@ -109,8 +109,23 @@ redecalration :-
 var : it is possible to 
 let : it is not possible
 const : it is no possible;
- 
+
+Initilization:- 
+var :- not required
+let :- not required 
+const :- it is required;
+
 Reinizilation :- 
-var :- it is possible
+var :- it is a possible
 let :- it is a possible
 const:-it is not a possible
+
+
+🧠 Core Differences
+Feature	 var 🧓 (old)	  let 🧑 (modern)	const 🔒 (strict)
+Scope	Function	Block {}	Block {}
+Re-declare	✅ Yes	❌ No	❌ No
+Re-assign	✅ Yes	✅ Yes	❌ No
+Hoisting	✅ Yes (undefined)	⚠️ Yes (TDZ)	⚠️ Yes (TDZ)
+Use today	🚫 Avoid	✅ Use	✅ Use
+
