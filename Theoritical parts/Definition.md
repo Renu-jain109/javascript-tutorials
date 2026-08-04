@@ -167,20 +167,25 @@ type-6 : Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
 type-7 : Object Literal = let obj = { name : "Aarushi", id: "123"}; 
 
 
+
+
 Arthmetic Operators :- Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
 Types of Operators :-
+
+
 1:- Arthmetic Operators:- Used to perform mathematical calculation.
 
-Operator	Description	Example	Output
-+	        Addition	  10 + 5	15
--	      Subtraction	  10 - 5	5
-*	    Multiplication	10 * 5	50
-/	        Division	  10 / 5	2
-%	  Modulus (Remainder)	10 % 3	 1
-**	   Exponentiation	2 ** 3	8
-++	    Increment   	a++	Adds  1
---	    Decrement	a--	Subtracts   1
+Operator	Description	  Example	Output
++	        Addition	    10 + 5	  15
+-	      Subtraction	    10 - 5	  5
+*	    Multiplication	  10 * 5	  50
+/	        Division	    10 / 5	  2
+%	  Modulus (Remainder)	10 % 3	  1
+**	   Exponentiation	  2 ** 3	  8
+++	    Increment   	 a++	Adds  1
+--	    Decrement	   a-- Subtracts   1
+
 
 
 2:- Assignment Operators:- Used to assign values to variables.
@@ -195,21 +200,25 @@ Operator	Example	   Equivalent
 **=	      a **= 2	   a = a ** 2
 
 
+
 3:- Comparision Operators :- Used to compare two values.
 
-Operator	Meaning	Example	               Output
-==	     Equal (value only)	5 == "5"	true
-===	    Strict Equal	5 === "5"	false
-!=	    Not Equal	5 != 3	                true
-!==	     Strict Not Equal	5 !== "5"	true
->	     Greater Than	10 > 5	        true
-<	           Less Than	10 < 5	        false
->=	Greater Than or Equal	10 >= 10	true
-<=	Less Than or Equal	5 <= 10	        true
+Operator	   Meaning	              Example	               Output
+==	     Equal (value only)	        5 == "5"	              true
+===	      Strict Equal	            5 === "5"             	false
+!=	      Not Equal	                 5 != 3	                true
+!==	      Strict Not Equal      	  5 !== "5"	              true
+>	        Greater Than	            10 > 5	                true
+<	           Less Than	            10 < 5	                false
+>=	   Greater Than or Equal	      10 >= 10	              true
+<=	   Less Than or Equal	          5 <= 10	                true
+
 
 
 Note :- (== compares only values (allows type conversion).
 === compares both value and data type (recommended).)
+
+
 
 4:- Logical Operators :- Used to combined multiple conditions.
 
@@ -226,6 +235,7 @@ let hasLicense = true;
 console.log(age >= 18 && hasLicense); // true
 console.log(age < 18 || hasLicense);  // true
 console.log(!hasLicense);             // false
+
 
 
 5:- Unary Operators :- Operate on a single operand.
@@ -245,6 +255,50 @@ console.log(typeof x); // "number"
 typeof is also a unary operator.
 
 
+Unary Operator:- this operators performs operation on only one operands. 
+types of unary operator :-
+
+Note:- '++' is increased by '1' and '--' is decreased by '1'
+
+1:- Incremental Operator
+--> two types of incremental operator :-
+
+  a:- pre-incremental operator:- Intially the value of 'x' must be incremented by 11' then the incremented value should be assigned in y.
+
+  example 1:-  let x = 5;
+             let y = x;
+     console.log(y) //output :- 5
+
+  example 2:-  let x = 5;
+             let y = ++x;
+     console.log(y) //output :- 6
+ 
+
+ 
+  b:- post-incremental operator:- Intially the value of 'x' must be assigned to 'y' then increment the value of x by '1' 
+
+  example 2:-  let x = 5;
+             let y = x++;
+     console.log(y) //output :- 5
+
+
+2:- Decremental Operator
+--> two types of Decremental operator :- 
+
+  a:- pre-decremental operator:- Initially the value of 'x' must be decremented by '1' then decremental value of 'x' should be assigned to 'y'.
+
+  example 2:-  let x = 5;
+             let y = --x;
+     console.log(y) //output :- 4
+
+
+  b:- post-decremental operator:- Initially the value of 'x' must be assigned to 'y' then decrement value by of 'x' by '1'.
+
+    example 2:-  let x = 5;
+             let y = x--;
+     console.log(y) //output :- 5
+
+
 6:- Ternary Operators :- A shorter form for if else conditons.
 
 Syntax:
@@ -254,8 +308,8 @@ Example:
 let age = 20;
 let result = age >= 18 ? "Adult" : "Minor";
 console.log(result);
-Output:
-Adult
+Output: Adult
+
 
 
 7:- String Operators :- The "+" operator concatinates (joins) string.
@@ -271,12 +325,14 @@ Output:
 Md Noushad
 
 
+
 8:- Nullish Operators (??) :- Returns the right hand value(R.H.S) only if the  left hand value is null or undefined.
 
 let name = null;
 console.log(name ?? "Guest");
 Output:
 Guest
+
 
 
 9:- Optional Chaining (?.) :- Safely accesses nested object properties.
@@ -286,6 +342,7 @@ console.log(user.address?.city);
 Output:
 undefined
 No error is thrown even though address doesn't exist.
+
 
 
 Data Types :- Defines the types of data is called data type.
@@ -299,8 +356,8 @@ Difference  Primitive Data Type and  Non-Primitive Data Type :-
 
 Primitive Data Type                                 Non-Primitve Data Type
 
-1:- Pre-defined  data type                            User defined data type
-2:- By using primitve data type                       We can store the multiple data in the one variable.
+1:- Pre-defined  data type                         1:- User defined data type.
+2:- By using primitve data type                    2:- We can store the multiple data in the one variable.
     we can store the single data                        Ex:- Arrays, Objects, functions
     type in the single block of 
     memory.
@@ -322,4 +379,31 @@ Ex:- let value = true;
      let value1 = false;
 
 Note :- value of true is 1 and the value of false is 0.
+
+
+Undefined:- Undefined will occurs when the variable is just declared and it is not intialised to any value.
+
+Ex:- let name;
+console.log(name); 
+
+The data type of undefined is 'undefined'.
+
+
+Difference between undefined and null.
+
+Undefined                                           Null
+
+1:- Undefined will occur                      1:- when the variable is intizialised to null then it will occur null.
+when varibale is just declared and  
+not intialized
+
+2:- data type of undefined is 'undefined'.    2:- data type of null is object. Ex:- let x = null; 
+Ex:- let x;
+
+
+<!-- Modules System:- Javascript has two types of module system 
+
+1:- Old Module System(Common js) require and module.export
+2:- New Module System(ES Module) import and export -->
+
 
