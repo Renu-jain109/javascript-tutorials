@@ -148,46 +148,43 @@ function name() {
   console.log("Hello world.")
 }
 
-identifiers :-
+- *identifiers :- -*
 - **point a :-** cant start with a number :- let 123name = "srishti";
 
 - **point b :-** cant use javscript keyword :-let if = 10;
 
 - **point c :-** identifiers are case-:- let age = 20; and let Age = 30;
 
-Literals :- A literal is a fixed value written directly in your code. 
-Ex :- let age = 20;
+
+## Literals :- A literal is a fixed value written directly in your code. 
+-**Ex :-** let age = 20;
 20 is a literal.
 
-<!-- Types of literal:-  -->
+# Types of literal:- 
 
-type-1 : Number Literal = 10;
-type-2 : String Literal = "20";
-type-3 : Boolean Literal = true , false;
-type-4 : Null Literal = Null;
-type-5 : BigInt Literal = 1234567891112131415n;
-type-6 : Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
-type-7 : Object Literal = let obj = { name : "Aarushi", id: "123"}; 
-
-
+- **type-2 :**  String Literal = "20";
+- **type-1 :**  Number Literal = 10;
+- **type-3 :**  Boolean Literal = true , false;
+- **type-4 :**  Null Literal = Null;
+- **type-5 :**  BigInt Literal = 1234567891112131415n;
+- **type-6 :**  Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
+- **type-7 :**  Object Literal = let obj = { name : "Aarushi", id: "123"}; 
 
 
-Arthmetic Operators :- Operators are symbols or keywords that perform operation on one or more operands(value or variable).
-
-Types of Operators :-
+# Types of Operators :- 
 
 
-1:- Arthmetic Operators:- Used to perform mathematical calculation.
+- **Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
-Operator	Description	  Example	Output
-+	        Addition	    10 + 5	  15
--	      Subtraction	    10 - 5	  5
-*	    Multiplication	  10 * 5	  50
-/	        Division	    10 / 5	  2
-%	  Modulus (Remainder)	10 % 3	  1
-**	   Exponentiation	  2 ** 3	  8
-++	    Increment   	 a++	Adds  1
---	    Decrement	   a-- Subtracts   1
+|Operator	|Description	 | Example|	Output|
+|+	        |Addition	  |  10 + 5|	  15|
+|-	      |Subtraction	  |  10 - 5|	  5|
+|*	    |Multiplication	|  10 * 5|	  50|
+|/	        |Division	  |  10 / 5|	  2|
+|%	  |Modulus (Remainder) |	10 % 3|	  1|
+|**	   |Exponentiation	|  2 ** 3|	  8|
+|++	    |Increment   	 |a++	Adds|  1|
+|--	    |Decrement	   |a-- Subtracts|   1|
 
 
 
