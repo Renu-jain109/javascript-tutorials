@@ -73,39 +73,37 @@ c :- Data type written type also not required.
 
 - **Point 11** :- Javascript can be written in simple english language.
 
-### variables :- These are named as a block of memory used to store the data so basically we have three types of declarations of variables :- 
+- **variables** :-  These are named as a block of memory used to store the data so basically we have three types of declarations of variables :- 
 
 - **1**:- var 
 - **2**:- let 
 - **3**:- const 
 
 # 1. Declaration
-eg:- 
- let name;
+- **eg :-** let name;
 
 - **1.1**Re-Declaration
-eg:- 
-  var name;
+- **eg :-** var name;
 
 
 # 2. Initialization
- let name = "Jain";
+- **eg :-** let name = "Jain";
 
 - **2.2 Re-Initialization**
- let name = "Arushi jain"
+- **eg :-** let name = "Arushi jain"
 
 ### Difference between var , let and const ? 
-# scope 
+- *scope -*  
 - **var**:- function scoped 
 - **let**:- blocked scoped
 - **const** :- blocked scoped
 
-# declaration :- 
+# Declaration :- 
 - **var**:- it is possible to just declaration. 
 - **let**:- it is possible to just declaration. 
 - **const** :- it is not possible to just declare. 
 
-# redecalration :- 
+# Redecalration :- 
 - **var**: it is possible to 
 - **let**: it is not possible
 - **const** : it is no possible;
@@ -116,9 +114,9 @@ eg:-
 - **const**:-it is not a possible
 
 
-tokens :- 
-What are tokens in javascript ? 
---> tokens are the smallest meaningful units of a javascript program.They include identifiers (names like variables and functions), keywords(reserved words such as let, if , return) , literals(fixed value like numbers ,strings , booleans , arrays and objects), operators(such as +, -, = ), and separators(such as ; , (), {}).
+## Tokens :- 
+- **What are tokens in javascript ?** 
+tokens are the smallest meaningful units of a javascript program.They include identifiers (names like variables and functions), keywords(reserved words such as let, if , return) , literals(fixed value like numbers ,strings , booleans , arrays and objects), operators(such as +, -, = ), and separators(such as ; , (), {}).
 
 Example :- 
 
@@ -134,13 +132,15 @@ let age = 25;
 | `;`   | Separator  |
 
 
-Keywords :- Keywords are reserved word in javascript that have a predefined meaning. you cant use them as identifiers.
+## Keywords :-
+ Keywords are reserved word in javascript that have a predefined meaning. you cant use them as identifiers.
 
-eg:- let, const, var, if, else, for, while, function, return, break, continue, class, new, switch, case, try, catch/
+- **eg:-** let, const, var, if, else, for, while, function, return, break, continue, class, new, switch, case, try, catch/
 
-Identifiers :- An identifier is the name you give to variables, functions, classes, objects;
+## Identifiers :-
+ An identifier is the name you give to variables, functions, classes, objects;
 
-ex:- 
+- **ex**:- 
 
 let studentName ;
 
@@ -148,43 +148,44 @@ function name() {
   console.log("Hello world.")
 }
 
-identifiers :- a :- cant start with a number :- let 123name = "srishti";
-               point b :- cant use javscript keyword :-  let if = 10;
-               point c :- identifiers are case-sensitive :- let age = 20; and let Age = 30;
+- *identifiers :- -*
+- **point a :-** cant start with a number :- let 123name = "srishti";
 
-Literals :- A literal is a fixed value written directly in your code. 
-Ex :- let age = 20;
+- **point b :-** cant use javscript keyword :-let if = 10;
+
+- **point c :-** identifiers are case-:- let age = 20; and let Age = 30;
+
+
+## Literals :- A literal is a fixed value written directly in your code. 
+-**Ex :-** let age = 20;
 20 is a literal.
 
-<!-- Types of literal:-  -->
+# Types of literal:- 
 
-type-1 : Number Literal = 10;
-type-2 : String Literal = "20";
-type-3 : Boolean Literal = true , false;
-type-4 : Null Literal = Null;
-type-5 : BigInt Literal = 1234567891112131415n;
-type-6 : Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
-type-7 : Object Literal = let obj = { name : "Aarushi", id: "123"}; 
-
-
+- **type-2 :**  String Literal = "20";
+- **type-1 :**  Number Literal = 10;
+- **type-3 :**  Boolean Literal = true , false;
+- **type-4 :**  Null Literal = Null;
+- **type-5 :**  BigInt Literal = 1234567891112131415n;
+- **type-6 :**  Array Literal = let arr = [1,2,3,4,5];  output :-[1,2,3,4,5]
+- **type-7 :**  Object Literal = let obj = { name : "Aarushi", id: "123"}; 
 
 
-Arthmetic Operators :- Operators are symbols or keywords that perform operation on one or more operands(value or variable).
-
-Types of Operators :-
+# Types of Operators :- 
 
 
-1:- Arthmetic Operators:- Used to perform mathematical calculation.
+- *Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
-Operator	Description	  Example	Output
-+	        Addition	    10 + 5	  15
--	      Subtraction	    10 - 5	  5
-*	    Multiplication	  10 * 5	  50
-/	        Division	    10 / 5	  2
-%	  Modulus (Remainder)	10 % 3	  1
-**	   Exponentiation	  2 ** 3	  8
-++	    Increment   	 a++	Adds  1
---	    Decrement	   a-- Subtracts   1
+|Operator	|  Description	 | Example|	Output|
+|---------|----------------|--------|-------|
+|+	      |  Addition	     |10 + 5  |    15 | 
+|-	      |Subtraction	   |10 - 5  |	   5  |
+|*	      |Multiplication	 |10 * 5  |    50 |
+|/	      |Division 	     |10 / 5  |    2  |
+|%	      |Modulus         |	10 % 3|	   1  |
+|**	      |Exponentiation  |2 ** 3  |    8  |
+|++	      |Increment 	     |a++	Adds|    1  |
+|--	      |Decrement	     | a-- Sub|    1  |
 
 
 
