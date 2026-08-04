@@ -174,17 +174,18 @@ function name() {
 # Types of Operators :- 
 
 
-- **Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
+- *Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
-|Operator	|Description	 | Example|	Output|
-|+	        |Addition	  |  10 + 5|	  15|
-|-	      |Subtraction	  |  10 - 5|	  5|
-|*	    |Multiplication	|  10 * 5|	  50|
-|/	        |Division	  |  10 / 5|	  2|
-|%	  |Modulus (Remainder) |	10 % 3|	  1|
-|**	   |Exponentiation	|  2 ** 3|	  8|
-|++	    |Increment   	 |a++	Adds|  1|
-|--	    |Decrement	   |a-- Subtracts|   1|
+|Operator	|  Description	 | Example|	Output|
+|---------|----------------|--------|-------|
+|+	      |  Addition	     |10 + 5  |    15 | 
+|-	      |Subtraction	   |10 - 5  |	   5  |
+|*	      |Multiplication	 |10 * 5  |    50 |
+|/	      |Division 	     |10 / 5  |    2  |
+|%	      |Modulus         |	10 % 3|	   1  |
+|**	      |Exponentiation  |2 ** 3  |    8  |
+|++	      |Increment 	     |a++	Adds|    1  |
+|--	      |Decrement	     | a-- Sub|    1  |
 
 
 
