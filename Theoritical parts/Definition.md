@@ -140,15 +140,13 @@ let age = 25;
 ## Identifiers :-
  An identifier is the name you give to variables, functions, classes, objects;
 
-- **ex**:- 
-
-let studentName ;
+- **ex**:- let studentName ;
 
 function name() { 
   console.log("Hello world.")
 }
 
-- *identifiers :- -*
+- *Identifiers :- -*
 - **point a :-** cant start with a number :- let 123name = "srishti";
 
 - **point b :-** cant use javscript keyword :-let if = 10;
@@ -156,14 +154,15 @@ function name() {
 - **point c :-** identifiers are case-:- let age = 20; and let Age = 30;
 
 
-## Literals :- A literal is a fixed value written directly in your code. 
+## Literals :-
+ A literal is a fixed value written directly in your code. 
 -**Ex :-** let age = 20;
 20 is a literal.
 
 # Types of literal:- 
 
-- **type-2 :**  String Literal = "20";
 - **type-1 :**  Number Literal = 10;
+- **type-2 :**  String Literal = "20";
 - **type-3 :**  Boolean Literal = true , false;
 - **type-4 :**  Null Literal = Null;
 - **type-5 :**  BigInt Literal = 1234567891112131415n;
@@ -174,7 +173,7 @@ function name() {
 # Types of Operators :- 
 
 
-- *Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
+- *1. Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
 |Operator	|  Description	 | Example|	Output|
 |---------|----------------|--------|-------|
@@ -189,34 +188,35 @@ function name() {
 
 
 
-2:- Assignment Operators:- Used to assign values to variables.
+-*2:- Assignment Operators:-* Used to assign values to variables.
 
-Operator	Example	   Equivalent
-=	        a = 5	   Assign value
-+=	      a += 2	   a = a + 2
--=	      a -= 2	   a = a - 2
-*=	      a *= 2	   a = a * 2
-/=	      a /= 2	   a = a / 2
-%=	      a %= 2	   a = a % 2
-**=	      a **= 2	   a = a ** 2
-
-
-
-3:- Comparision Operators :- Used to compare two values.
-
-Operator	   Meaning	              Example	               Output
-==	     Equal (value only)	        5 == "5"	              true
-===	      Strict Equal	            5 === "5"             	false
-!=	      Not Equal	                 5 != 3	                true
-!==	      Strict Not Equal      	  5 !== "5"	              true
->	        Greater Than	            10 > 5	                true
-<	           Less Than	            10 < 5	                false
->=	   Greater Than or Equal	      10 >= 10	              true
-<=	   Less Than or Equal	          5 <= 10	                true
+Operator|	Example	 |   Equivalent|
+--------|----------|-------------|
+=	      |  a = 5	 | Assign value|
++=	    |  a += 2	 |   a = a + 2 |
+-=	    |  a -= 2	 |   a = a - 2 |
+*=	    |  a *= 2	 |   a = a * 2 |
+/=	    |  a /= 2	 |  a = a / 2  |
+%=	    |  a %= 2	 |  a = a % 2  |
+**=	    |  a **= 2 |  a = a ** 2 |
 
 
 
-Note :- (== compares only values (allows type conversion).
+-*3:- Comparision Operators :-* Used to compare two values.
+
+Operator|	   Meaning	            |    Example	 | Output|
+==	    | Equal (value only)	    |    5 == "5"	 |  true |
+===	    |  Strict Equal	          |    5 === "5" |	false|
+!=	    |   Not Equal	            |     5 != 3	 |  true |
+!==	    |   Strict Not Equal      |	  5 !== "5"	 |  true |
+>	      |  Greater Than	          |     10 > 5	 |  true |
+<	      |   Less Than	            |     10 < 5	 | false |
+>=	    |Greater Than or Equal	  |     10 >= 10 |  true |
+<=	    |Less Than or Equal	      |     5 <= 10	 |  true |
+
+
+
+-*Note :-                                  (== compares only values (allows type conversion).
 === compares both value and data type (recommended).)
 
 
@@ -373,34 +373,34 @@ console.log(typeOf(x));
 console.log(typeOf(y));
 
 
-String :- The data which are closed (""), (``), ('') are considered as string.
+-*String :-* The data which are closed (""), (``), ('') are considered as string.
 
-Boolean :- it just include true or false.
+-*Boolean :-* it just include true or false.
 
-Ex:- let value = true;
+-*Ex:-* let value = true;
      let value1 = false;
 
-Note :- value of true is 1 and the value of false is 0.
+-*Note :-* value of true is 1 and the value of false is 0.
 
 
-Undefined:- Undefined will occurs when the variable is just declared and it is not intialised to any value.
+- *Undefined:-* Undefined will occurs when the variable is just declared and it is not intialised to any value.
 
-Ex:- let name;
+-**Ex:-** let name;
 console.log(name); 
 
-The data type of undefined is 'undefined'.
+- *The data type of undefined is 'undefined'.*
 
 
-Difference between undefined and null.
+- *Difference between undefined and null.*
 
-Undefined                                           Null
-
-1:- Undefined will occur                      1:- when the variable is intizialised to null then it will occur null.
-when varibale is just declared and  
-not intialized
-
-2:- data type of undefined is 'undefined'.    2:- data type of null is object. Ex:- let x = null; 
-Ex:- let x;
+|Undefined                                  |         Null                               |
+|-------------------------------------------|--------------------------------------------|
+|1:- Undefined will                         |  1:- when the variable is intizialised     |
+|occur. when varibale is just declared and  |              then it will occur null.      | 
+|not intialized                             |                                            | 
+|                                           |                                            |
+|2:- data type of undefined is 'undefined'. |   2:- data type of null is object.         |
+|Ex:- let x;                                |             Ex:- let x = null;             | 
 
 
 <!-- Modules System:- Javascript has two types of module system 
@@ -409,3 +409,78 @@ Ex:- let x;
 2:- New Module System(ES Module) import and export -->
 
 
+Control Statement:- They are the statements which are used to control the flow of execution of the program where are the statement which are used to flow the execution of the program.
+
+There are two types of control statement:-
+
+1) Branching statement :- They are the statement used to branch from the normal execution and execute only particular set or block of statement. they are also known as conditional statement.
+
+Ex:- a) if :- 
+
+ Point 1:- The javascript if a statement tests the condition.
+ Point 2:- if it is true then it execute the set of block.
+ Point 3:- If the condition is not true then that set of block will be skipped.
+  
+  Syntax:- if(conditon){
+      if condition is true block will be executed.
+  }
+
+     b) else :- 
+      
+  Point 1:- if the condition is false then the else block will execute.
+  
+  Syntax:- if(conditon){
+      if condition is true block will be executed.
+  } else{
+     if condition is false block will be executed.
+  }
+
+     c) nested if else :-
+
+ Point 1:- if the first condition is true then it goes to next nested if block. 
+
+ syntax :- if(condition) {
+               if(condition){
+
+               } else{
+
+               }
+          }else {
+
+          }
+
+     d) else if ladder :-
+ Point 1:- in else if ladder condition 1 is checked and if it is true then the set of block will be execute or 
+ Point 2:- if the the condition 1 is false it goes to the else part and check the condition if it is true then the set of block will be execute or 
+ Point 3:- if the condition 2 is false it goes to else part and execute the set of block
+ Point 4:- here there can be many stages of if else condition but only one block will be executed 
+
+ Syntax:- 
+        if(condition1) {
+
+        } else if(condition2) {
+
+        } else if(condition3) {
+
+        } else{
+
+        }
+
+     e) switch:- 
+
+Point 1:- Switch statement check the value or expression they compare it with the case value and then value execute the corresponding blocks.
+
+Switch(value){
+     case 1: console.log('case 1');
+     break;
+     case 2: console.log('case 2');
+     break;
+     case 3: console.log('case 3');
+     break;
+     default;console.log('if condition is not a true then by default this line will be execute')
+}
+
+
+2) Looping Statement
+
+<!-- Homework :- write all the one example of each control statement-->
