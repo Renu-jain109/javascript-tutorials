@@ -3,7 +3,7 @@ let user = {
     "lastName": "sharma"
 }
 
-console.log(user?.Firstname)
+console.log(user?.Firstname);
 
 let name = null;
-console.log(name?.address)
+console.log(name?.address);
