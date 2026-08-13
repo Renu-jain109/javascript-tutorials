@@ -1,7 +1,5 @@
 Javascript is dynamic. It is one of the three core technologies of the World Wide Web, alongside HTML and CSS.
 
----
-
 ## Key Characteristics
 
 - **Interpreted Language** — JavaScript code is executed line by line by the browser's JavaScript engine (e.g., V8 in Chrome, SpiderMonkey in Firefox) without needing prior compilation.
@@ -175,60 +173,66 @@ function name() {
 
 - *1. Arthmetic Operators :-* Operators are symbols or keywords that perform operation on one or more operands(value or variable).
 
-|Operator	|  Description	 | Example|	Output|
-|---------|----------------|--------|-------|
-|+	      |  Addition	     |10 + 5  |    15 | 
-|-	      |Subtraction	   |10 - 5  |	   5  |
-|*	      |Multiplication	 |10 * 5  |    50 |
-|/	      |Division 	     |10 / 5  |    2  |
-|%	      |Modulus         |	10 % 3|	   1  |
-|**	      |Exponentiation  |2 ** 3  |    8  |
-|++	      |Increment 	     |a++	Adds|    1  |
-|--	      |Decrement	     | a-- Sub|    1  |
+|Operator	 |  Description  | Example| Output|
+|----------|---------------|--------|-------|
+|+	      |  Addition	  |10 + 5  |    15 | 
+|-	      |Subtraction	  |10 - 5  |    5  |
+|*	      |Multiplication |10 * 5  |    50 |
+|/	      |Division 	  |10 / 5  |    2  |
+|%	      |Modulus        |	10 % 3|	 1  |
+|**	      |Exponentiation |2 ** 3  |    8  |
+|++	      |Increment 	  |a++ Adds|    1  |
+|--	      |Decrement	  | a-- Sub|    1  |
 
 
 
 -*2:- Assignment Operators:-* Used to assign values to variables.
 
-Operator|	Example	 |   Equivalent|
---------|----------|-------------|
-=	      |  a = 5	 | Assign value|
+Operator |Example	 |  Equivalent |
+-------- |-----------|-------------|
+=	    |  a = 5	 | Assign value|
 +=	    |  a += 2	 |   a = a + 2 |
 -=	    |  a -= 2	 |   a = a - 2 |
 *=	    |  a *= 2	 |   a = a * 2 |
 /=	    |  a /= 2	 |  a = a / 2  |
 %=	    |  a %= 2	 |  a = a % 2  |
-**=	    |  a **= 2 |  a = a ** 2 |
+**=	    |  a **= 2  |  a = a ** 2 |
 
 
 
--*3:- Comparision Operators :-* Used to compare two values.
+-*3:- Comparision Operators Or Relational Operators:-* Used to compare two values.
 
-Operator|	   Meaning	            |    Example	 | Output|
-==	    | Equal (value only)	    |    5 == "5"	 |  true |
-===	    |  Strict Equal	          |    5 === "5" |	false|
-!=	    |   Not Equal	            |     5 != 3	 |  true |
-!==	    |   Strict Not Equal      |	  5 !== "5"	 |  true |
->	      |  Greater Than	          |     10 > 5	 |  true |
-<	      |   Less Than	            |     10 < 5	 | false |
->=	    |Greater Than or Equal	  |     10 >= 10 |  true |
-<=	    |Less Than or Equal	      |     5 <= 10	 |  true |
+|Operator|	   Meaning      |    Example	 | Output|
+|--------|---------------------|--------------|-------|
+|==	    | Equal (value only)	 |    5 == "5"	 |  true |
+|===	    |  Strict Equal	      |    5 === "5" |  false|
+|!=	    |   Not Equal	      |     5 != 3	 |  true |
+|!==	    |   Strict Not Equal  |	  5 !== "5"|  true |
+|>	    |  Greater Than	      |     10 > 5	 |  true |
+|<	    |   Less Than	      |     10 < 5	 | false |
+|>=	    |Greater Than or Equal|     10 >= 10 |  true |
+|<=	    |Less Than or Equal	 |     5 <= 10	 |  true |
 
 
 
--*Note :-                                  (== compares only values (allows type conversion).
+-*Note :-*(== compares only values (allows type conversion).
 === compares both value and data type (recommended).)
 
+Relational Operator :- we use to find the relationship between the two operands and these operators will always give the result in the form of boolean. 
+
+Point 1 :- Checks the value of two operands are equal or not if yes, condition becomes true.
+Point 2:-  Checks the value of two operands are equal or not if not, condition becomes false.
 
 
-4:- Logical Operators :- Used to combined multiple conditions.
+- *4:- Logical Operators :-* Used to combined multiple conditions.
 
-Operator	Meaning
-&&	        AND
-`	
-!	        NOT
+|Operator|     Meaning |
+|--------|-------------|
+|&&	    |     AND     | 
+|`	    |             |  
+|!	    |    NOT      | 
 
-Example:
+- *Example:*
 
 let age = 20;
 let hasLicense = true;
@@ -300,7 +304,7 @@ Note:- '++' is increased by '1' and '--' is decreased by '1'
      console.log(y) //output :- 5
 
 
-6:- Ternary Operators :- A shorter form for if else conditons.
+-*6:- Ternary Operators :- A shorter form for if else conditons.
 
 Syntax:
 condition ? valueIfTrue : valueIfFalse;
@@ -480,7 +484,74 @@ Switch(value){
      default;console.log('if condition is not a true then by default this line will be execute')
 }
 
+Difference between switch case and else if 
+ 
+switch                                                            else if
 
-2) Looping Statement
+Point 1 :- inside the switch we cant use greater              Point 1:- in else if, we can use conditions.
+or less than means we cant use any condition
 
-<!-- Homework :- write all the one example of each control statement-->
+2) Looping Statement :- In programming language , loops are used to execute the set of instruction or functions repeatly. when some given condition becomes true.
+
+Types of Looping Statement :- 
+
+1:- For Loop :- if we have a fixed length, then we go for "for loop". 
+Point 1:- In the Javascript for loop is used to iterate the part of the program several time .
+ Point 2:- if the no. of iteration is fixed we use for loop.
+
+for(let i=1; i<=10; i++){    // i=10+1 = 11      11<=10
+  console.log(i)               // 10,
+}
+
+
+1 to 10 output only
+	
+
+let i = 1;   //  Initialization    Step - 1
+i<=10        // Condition          Step - 2
+i++          // incr ++ Operator   Step - 3
+
+loop between Step 2 and Step 3
+
+
+2:- For - in - loop :- for in loop we use them for objects.
+3:- For - of - Loop :- For of loop we use them for arrays.
+4:- for each Loop :-
+5:- do while loop : 
+Point 1:- In the Javascript do while loop is used to iterate the part of the program several time .
+ Point 2:- if the no. of iteration is not fixed and you must have to execute the loop atleast once it is recommended to use do while loop. the do while loop executed  atleast once because the condition is checked after the loop body
+
+6:- while loop :-
+Point 1:- In the Javascript  while loop is used to iterate the part of the program several time .
+ Point 2:- if the no. of iteration is not fixed  it is recommended to use  while loop. 
+
+
+
+
+
+Strings :- A string is a sequence of characters used to represent text in javascript, javascript provides various built-in string methods to search extract , modify , compare and manipulate string.
+
+
+Method 1 :- length --> returns the number of characters in a string Done 
+Method 2 :- toUpperCase --> convert all characters to upper case. done 
+Method 3 :- toLowerCase --> convert all characters to lower case. done 
+Method 4:- charAt --> returns the character at a specified index.
+Method 5:- includes --> check whether a string contains a specified value or not.
+Method 6:- startWith --> whether the string start with a specified value or not.
+Method 7:- endsWith --> check whether the string ends with a specified value or not.
+Method 8:- indexOf --> returns the index of the first occurence of the specified value.
+Method 9:- lastIndexOf --> returns the index of the last occurence of the specified value.
+Method 10:- slice --> extracts the portion of a string and return it as a new string.
+Method 11:- substring --> extracts the characters between the two specified indexes.
+Method 12:- trim --> removes the whitespace from both the beginning and ending of an string
+Method 13:- trimStart --> remove the whitespace from the beginning of a string
+Method 14:- trimEnd --> remove the whitespace from the end of a string
+Method 15:- replace --> replaces the first matching value in a string.
+Method 16:- replaceAll --> replaces all the matching value of a string. 
+Method 17:- split --> converts a string into an array based on a separator. done 
+Method 18:- concat --> combines two or more strings.
+method 19:- repeat --> repeats a string specified number of times.
+Method 20:- match --> searches a string using a regular expression and returns matching result.
+Method 21:- matchAll --> returns all matches found all using regular expression.
+Method 22:- search--> searches for a match using regular expression and returns its index.
+Method 23:- Localecompare --> compare two strings and returns a value indicating their sort order.

@@ -20,3 +20,5 @@ console.log('Finding the length of name ' , name.length)
 console.log('Finding the length of whitespace ' , whitespace.length)
 console.log('Finding the length of specialCharacter ' , specialCharacter.length)
 console.log('Finding the length of Empty ' , Empty.length)
+
+// Write the code for the prime number 
