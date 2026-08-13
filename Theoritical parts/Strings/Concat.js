@@ -15,8 +15,8 @@
 
 let str18a = "Hello";
 let str18b = " World";
-console.log(str18a, str18b);
-console.log(str18a + str18b);
-console.log(str18a.concat(str18b));            // Output: Hello World
-console.log(str18a.concat(" ", "World", "!")); // Output: Hello World!
-console.log(str18a); 
+// console.log(str18a, str18b);
+// console.log(str18a + str18b);
+console.log(str18a.concat(str18a));            // Output: Hello World
+// console.log(str18a.concat(" ", "World", "!")); // Output: Hello World!
+// console.log(str18a); 

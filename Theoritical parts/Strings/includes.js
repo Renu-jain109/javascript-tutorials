@@ -18,7 +18,7 @@ let str5 = "I love JavaScript";
 // console.log(str5.includes("JavaScript")); // Output: true
 // console.log(str5.includes("Python"));     // Output: false
 // console.log(str5.includes("javascript")); // Output: false  (case-sensitive)
-// console.log(str5.includes("love", 10));   // Output: false  (search starts at index 10)
+console.log(str5.includes("love", 10));   // Output: false  (search starts at index 10)
 
-console.log(str5.includes('name'));
+// console.log(str5.includes('name'));
 

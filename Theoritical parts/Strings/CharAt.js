@@ -13,4 +13,4 @@
 
 let name = "Aarushi-Jain"
 // console.log(name.split('')) //['A','a','r','u','s','h','i',' ','J','a','i','n']
-console.log(name.charAt(7))
+console.log(name.charAt(15))
